@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Trabalhos</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding-horizontal">
+
+    <!-- 1) Exibe artigos, um de cada vez (loop) -->
+
+    <div *ngFor="let art of items | async">
+
+        <ion-card>
+            <ion-header>
+                <ion-card-title>{{ art.service }}</ion-card-title>
+            </ion-header>
+            <ion-card-content>
+                <ion-list>
+                    <ion-item>{{ art.value }} </ion-item>
+                    <ion-item>{{ art.whatsapp }}</ion-item>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+
+    </div>
+
+</ion-content>
