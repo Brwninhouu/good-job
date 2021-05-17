@@ -21,14 +21,11 @@ const routes: Routes = [
   // Rota para a página inicial
   {
     path: '',
-    redirectTo: 'news',
+    redirectTo: 'user/profile',
     pathMatch: 'full'
   },
 
-  {
-    path: 'news',
-    loadChildren: () => import('./pages/news/news.module').then(m => m.NewsPageModule)
-  },
+
   {
     path: 'contacts',
     loadChildren: () => import('./pages/contacts/contacts.module').then(m => m.ContactsPageModule)

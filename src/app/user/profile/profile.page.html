@@ -4,7 +4,7 @@
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>Perfil</ion-title>
-        <ion-img src="assets/em01.jpg" slot="end" class="pages-logo"></ion-img>
+        <ion-img routerLink="/job" src="assets/em01.jpg" slot="end" class="logo-geral"></ion-img>
     </ion-toolbar>
 </ion-header>
 
@@ -35,7 +35,8 @@
                 <ion-item class="ion-no-padding"><strong>CPF:&nbsp;</strong>{{ (item | async)?.cpf }}</ion-item>
             </ion-list>
 
-            <ion-button expand="block" routerLink="/edit/{{ (item | async)?.uid }}">Editar</ion-button>
+           <!-- <ion-button expand="block" !routerLink="/register/{{ (item | async)?.uid }}">Editar</ion-button>-->
+           <ion-button expand="block" routerLink="/register">Editar</ion-button>
         </ion-card-content>
     </ion-card>
 

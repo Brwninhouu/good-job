@@ -48,9 +48,9 @@ export class LoginPage implements OnInit {
   async feedback(userName: string) {
     const alert = await this.alert.create({
       header: `Olá ${userName}!`,
-      message: 'Você já pode acessar o conteúdo restrito.',
+      message: 'Login efetuado com sucesso!',
       buttons: [{
-        text: 'OK',
+        text: 'Beleza',
         handler: () => {
           this.router.navigate(['/user/profile']);
         }

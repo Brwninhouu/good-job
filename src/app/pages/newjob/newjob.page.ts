@@ -148,7 +148,7 @@ export class NewjobPage implements OnInit {
         text: 'Ok',
         handler: () => {
 
-          this.router.navigate(['/user/profile']);
+          this.router.navigate(['/job']);
 
         }
       }]
